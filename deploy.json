@@ -25,7 +25,8 @@
             "env": {
                 "NODE_ENV":"staging",
                 "PORT":3000
-            }
+            },
+            "post-deploy": "npm i && pm2 startOrRestart deploy.json --env staging"
         }
     }
 }
