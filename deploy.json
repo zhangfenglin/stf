@@ -20,7 +20,7 @@
             "user": "zhangfenglin",
             "host": "127.0.0.1",
             "ref": "origin/master",
-            "repo": "https://github.com/zhangfenglin/stf.git",
+            "repo": "git@github.com:zhangfenglin/stf.git",
             "path": "/Users/zhangfenglin/apps/stf",
             "env": {
                 "NODE_ENV":"staging",
