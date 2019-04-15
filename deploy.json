@@ -18,7 +18,7 @@
     "deploy": {
         "staging": {
             "user": "zhangfenglin",
-            "host": "192.168.50.12",
+            "host": "127.0.0.1",
             "ref": "origin/master",
             "repo": "https://github.com/zhangfenglin/stf.git",
             "path": "/Users/zhangfenglin/apps/stf",
