@@ -1,0 +1,1 @@
+bin/stf local --public-ip 192.168.220.180 --port 3000 --allow-remote &

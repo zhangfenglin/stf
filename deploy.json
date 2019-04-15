@@ -1,0 +1,31 @@
+{
+    "apps": [
+        {
+            "name": "openstf",
+            "script": "./bin/stf",
+            "env": {
+                "COMMON_VARIABLE": "true"
+            },
+            "env_production": {
+                "NODE_ENV": "production"
+            },
+            "env_staging": {
+                "NODE_ENV": "staging",
+                "PORT": 3000
+            }
+        }
+    ],
+    "deploy": {
+        "staging": {
+            "user": "zhangfenglin",
+            "host": "192.168.50.12",
+            "ref": "origin/master",
+            "repo": "https://github.com/zhangfenglin/stf.git",
+            "path": "/Users/zhangfenglin/apps/stf",
+            "env": {
+                "NODE_ENV":"staging",
+                "PORT":3000
+            }
+        }
+    }
+}

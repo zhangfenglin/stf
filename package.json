@@ -30,7 +30,9 @@
   },
   "scripts": {
     "test": "gulp test",
-    "prepublish": "bower install && not-in-install && gulp build || in-install"
+    "prepublish": "bower install && not-in-install && gulp build || in-install",
+    "deploy:staging": "pm2 deploy deploy.json staging",
+    "deploy:setup": "pm2 deploy deploy.json staging setup 2&>/dev/null && echo setup"
   },
   "dependencies": {
     "@slack/client": "^3.5.4",
