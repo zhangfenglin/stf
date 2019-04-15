@@ -18,13 +18,14 @@
     "deploy": {
         "staging": {
             "user": "zhangfenglin",
-            "host": "127.0.0.1",
+            "host": ["127.0.0.1"],
             "ref": "origin/master",
             "repo": "git@github.com:zhangfenglin/stf.git",
             "path": "/Users/zhangfenglin/apps/stf",
             "env": {
                 "NODE_ENV":"staging",
-                "PORT":3000
+                "--port":3000,
+                "--public-ip": "192.168.220.180"
             },
             "post-deploy": "npm i && npm upgrade && pm2 startOrRestart deploy.json --env staging"
         }
